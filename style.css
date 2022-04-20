@@ -23,4 +23,60 @@ body {
 #app {
     display: flex;
     flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    padding: 1.5rem;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-text {
+    color: #5E7A7D;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.part1 {
+    position: relative;
+}
+
+#input-price {
+    width: 100%;
+    height: 48px;
+    font-size: 24px;
+    text-align: right;
+    font-family: 'Space Mono', monospace;
+    padding-right: 1rem;
+    border: none;
+    background-color: #F3F9FA;
+    border-radius: 0.4rem;
+    color: #00474B;
+
+    font-weight: bold;
+}
+
+.dollar-sign {
+    position: absolute;
+    top: 2.5rem;
+    left: 1rem;
+}
+
+input[type='text']::placeholder {
+    text-align: right;
+    /* for Chrome, Firefox, Opera */
+}
+
+:-ms-input-placeholder {
+    text-align: right;
+    /* for IE 10-11 */
+}
+
+::-webkit-input-placeholder {
+    text-align: right;
+    /* for IE Edge */
 }
