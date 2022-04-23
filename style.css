@@ -143,3 +143,9 @@ input[type='text']::placeholder {
     color: #00474B;
     font-weight: bold;
 }
+
+.calculation_section {
+    background-color: #00474b;
+    display: flex;
+    flex-direction: column;
+}
