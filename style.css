@@ -148,4 +148,61 @@ input[type='text']::placeholder {
     background-color: #00474b;
     display: flex;
     flex-direction: column;
+    border-radius: 1rem;
+    padding: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+}
+
+.tip {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.total {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.money_desc {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.per {
+    font-size: 13px;
+    color: #7F9D9F;
+    font-weight: bold;
+}
+
+.amount {
+    display: flex;
+    flex-direction: row;
+    font-size: 32px;
+    font-weight: bold;
+    color: #26C2AE;
+}
+
+.reset_section {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+#reset {
+    width: 100%;
+    color: #00474B;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #0D686D;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
 }
