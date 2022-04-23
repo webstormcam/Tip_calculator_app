@@ -43,6 +43,7 @@ body {
 
 .part1 {
     position: relative;
+    margin-bottom: 2rem;
 }
 
 #input-price {
@@ -79,4 +80,29 @@ input[type='text']::placeholder {
 ::-webkit-input-placeholder {
     text-align: right;
     /* for IE Edge */
+}
+
+.button-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.tip-option {
+    width: 146.63px;
+    font-size: 24px;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    color: #fff;
+    background-color: #00474B;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    font-family: 'Space Mono', monospace;
+    font-weight: bold;
+}
+
+.special-tip {
+    background-color: #fff;
+    color: grey;
 }
