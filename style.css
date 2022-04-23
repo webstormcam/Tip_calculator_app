@@ -13,6 +13,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 375px;
+    margin: 0 auto;
 }
 
 #logo {
@@ -85,7 +87,7 @@ input[type='text']::placeholder {
 .button-section {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
 
 }
 
@@ -97,7 +99,7 @@ input[type='text']::placeholder {
     color: #fff;
     background-color: #00474B;
     margin-top: 0.5rem;
-    margin-left: 1rem;
+    border: none;
     font-family: 'Space Mono', monospace;
     font-weight: bold;
 }
@@ -105,4 +107,11 @@ input[type='text']::placeholder {
 .special-tip {
     background-color: #fff;
     color: grey;
+    text-align: right;
+}
+
+.tip-option:hover {
+    color: #00474B;
+    background-color: #9FE8DF;
+    cursor: pointer;
 }
