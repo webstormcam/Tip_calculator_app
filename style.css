@@ -26,8 +26,7 @@ body {
     flex-direction: column;
     background-color: #fff;
     width: 100%;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
+    border-radius: 1rem;
     padding: 1.5rem;
     max-width: 375px;
 }
