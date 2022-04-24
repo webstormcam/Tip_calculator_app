@@ -205,3 +205,24 @@ input[type='text']::placeholder {
     border: none;
     border-radius: 0.5rem;
 }
+
+
+@media screen and (min-width:1024px) {
+    #app {
+        flex-direction: row;
+        max-width: 920px;
+        justify-content: space-around;
+    }
+
+    .section1 {
+        max-width: 379px;
+    }
+
+    .section2 {
+        width: 413px;
+    }
+
+    .tip-option {
+        width: 117px;
+    }
+}
