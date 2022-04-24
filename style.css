@@ -206,6 +206,11 @@ input[type='text']::placeholder {
     border-radius: 0.5rem;
 }
 
+#reset:hover {
+    background-color: #9FE8DF;
+    cursor: pointer;
+}
+
 
 @media screen and (min-width:1024px) {
     body {
