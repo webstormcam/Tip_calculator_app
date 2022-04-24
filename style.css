@@ -208,10 +208,17 @@ input[type='text']::placeholder {
 
 
 @media screen and (min-width:1024px) {
+    body {
+        height: 100vh;
+        align-items: center;
+    }
+
     #app {
         flex-direction: row;
         max-width: 920px;
         justify-content: space-around;
+        padding: 1.5rem;
+        padding-top: 2rem;
     }
 
     .section1 {
@@ -224,5 +231,18 @@ input[type='text']::placeholder {
 
     .tip-option {
         width: 117px;
+    }
+
+    .tip_total {
+        margin-bottom: 6.5rem;
+    }
+
+    .calculation_section {
+        padding: 2rem;
+
+    }
+
+    .amount {
+        font-size: 48px;
     }
 }
