@@ -1,15 +1,16 @@
 let bill_value = document.getElementById('input-price')
-let options = document.querySelectorAll('.tip-option').forEach(item =>{
-    item.addEventListener('click', event =>{
-    item.style.backgroundColor ='#26C2AE'
-    item.style.color ='#00474B'
-   
-    })
-    // item.addEventListener('mouseout',event=>{
-    //     item.style.backgroundColor='rgba(24, 23, 23, 0.555)'
-    //     item.firstElementChild.style.color ='white'
-    // })
-})
+let options = document.querySelectorAll('.tip-option');
+for(i = 0; i<options.length;i++){
+    options[i].addEventListener("click",function(e){
+        let option = document.querySelectorAll(".tip-option");
+        for(i=0; i<option.length;i++){
+            option[i].classList.remove('click');
+        }
+
+    this.classList.add('click')
+});
+}
+
 let num_peeps = document.getElementById('people-counter')
 
 

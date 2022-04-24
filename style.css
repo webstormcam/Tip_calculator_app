@@ -211,6 +211,11 @@ input[type='text']::placeholder {
     cursor: pointer;
 }
 
+.click {
+    background-color: #26C2AE;
+    color: #00474B;
+}
+
 
 @media screen and (min-width:1024px) {
     body {
