@@ -1,8 +1,8 @@
 let bill_value = document.getElementById('input-price')
-let games = document.querySelectorAll('.tip-option').forEach(item =>{
+let options = document.querySelectorAll('.tip-option').forEach(item =>{
     item.addEventListener('click', event =>{
     item.style.backgroundColor ='#26C2AE'
-    item.firstElementChild.style.color ='#00474B'
+    item.style.color ='#00474B'
    
     })
     // item.addEventListener('mouseout',event=>{

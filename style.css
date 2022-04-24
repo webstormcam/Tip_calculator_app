@@ -117,7 +117,7 @@ input[type='text']::placeholder {
     text-align: right;
 }
 
-.tip-option:hover {
+.hover:hover {
     color: #00474B;
     background-color: #9FE8DF;
     cursor: pointer;
