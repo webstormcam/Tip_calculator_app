@@ -123,7 +123,7 @@ input[type='text']::placeholder {
 }
 
 .special-tip {
-    background-color: #fff;
+    background-color: #fff !important;
     color: grey;
     text-align: right;
     width: 146.63px;
@@ -140,6 +140,10 @@ input[type='text']::placeholder {
     color: #00474B;
     background-color: #9FE8DF;
     cursor: pointer;
+}
+
+.special-tip:hover {
+    outline: 2px solid #26C2AE;
 }
 
 .person {
