@@ -11,7 +11,7 @@ for(i = 0; i<options.length;i++){
 });
 }
 
-let num_peeps = document.getElementById('people-counter')
+let num_peeps = document.getElementById('people-counter');
 
 
 
@@ -21,7 +21,12 @@ console.log(this.value)
 }
 
 num_peeps.onkeyup = function(){
+    if(Number(num_peeps.value)===0){
+        console.log('Thats a zero')
+    }
     console.log(this.value)
 }
+
+
 
 
