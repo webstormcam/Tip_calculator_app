@@ -239,6 +239,13 @@ input[type='text']::placeholder {
     color: #00474B;
 }
 
+#error-text {
+    color: #E17457;
+    position: absolute;
+    right: 0rem;
+    top: 0rem;
+    font-weight: bold;
+}
 
 @media screen and (min-width:1024px) {
     body {
