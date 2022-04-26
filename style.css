@@ -70,6 +70,17 @@ body {
     font-weight: bold;
 }
 
+input:hover {
+    cursor: pointer;
+}
+
+input:focus {
+    outline: 2px solid #26C2AE;
+    ;
+}
+
+
+
 .dollar-sign {
     position: absolute;
     top: 2.5rem;
@@ -115,6 +126,14 @@ input[type='text']::placeholder {
     background-color: #fff;
     color: grey;
     text-align: right;
+    width: 146.63px;
+    font-size: 24px;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    margin-top: 0.5rem;
+    border: none;
+    font-family: 'Space Mono', monospace;
+    font-weight: bold;
 }
 
 .hover:hover {
@@ -240,6 +259,10 @@ input[type='text']::placeholder {
     }
 
     .tip-option {
+        width: 117px;
+    }
+
+    .special-tip {
         width: 117px;
     }
 
