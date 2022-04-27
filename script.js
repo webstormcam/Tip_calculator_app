@@ -1,4 +1,6 @@
-let bill_value = document.getElementById('input-price')
+let bill_value = document.getElementById('input-price');
+let bill='0.00';
+let tip = document.getElementById('tip');
 let options = document.querySelectorAll('.tip-option');
 for(i = 0; i<options.length;i++){
     options[i].addEventListener("click",function(e){
@@ -18,7 +20,11 @@ let error_text = document.getElementById('error-text')
 
 
 bill_value.onkeyup = function(){
-console.log(this.value)
+
+bill = this.value;
+
+
+
 
 }
 
@@ -37,6 +43,28 @@ num_peeps.onkeyup = function(){
     }
     console.log(this.value)
 }
+
+function tipAmountHuman(humans,cost,percent){
+let gratuity = cost*percent;
+let human = gratuity/humans;
+return human
+}
+
+
+
+setInterval(function(){ 
+    let tipPerperson=tipAmountHuman(2,10,0.05);
+    tip.innerHTML= Math.floor(tipPerperson*100)/100;
+    console.log(tip.innerHTML)
+}, 1000);
+
+
+
+
+
+
+
+
 
 
 
