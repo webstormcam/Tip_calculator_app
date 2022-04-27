@@ -15,9 +15,28 @@ for(i = 0; i<options.length;i++){
 }
 
 let num_peeps = document.getElementById('people-counter');
-let num=0;
-
+let num=0.00;
+let tom=0.00;
+let total_person;
 let error_text = document.getElementById('error-text')
+
+
+
+let numchange = bill_value.onkeyup = function(){
+    console.log(`This is ${num}`)
+    if(num>0){
+        tom=bill_value.value;
+        total_person=tom/num
+        total.innerHTML=total_person.toFixed(2);
+        console.log('cutting')
+    } else{
+        total.innerHTML = this.value;
+        console.log('not cuttubg')
+    }
+    
+    }
+
+
 
 
 
@@ -36,8 +55,11 @@ num_peeps.onkeyup = function(){
         num_peeps.style.outline ='initial';
         num = Number(this.value)
         console.log(`${num} ${typeof num}`)
+       numchange()
+        
     }
 
+    
 
     
    
@@ -48,17 +70,7 @@ num_peeps.onkeyup = function(){
 }
 
 
-bill_value.onkeyup = function(){
-    console.log(`This is ${num}`)
-    if(num>0){
-        total.innerHTML=this.value/num;
-        console.log('cutting')
-    } else{
-        total.innerHTML = this.value;
-        console.log('not cuttubg')
-    }
-    
-    }
+
 
 
 
