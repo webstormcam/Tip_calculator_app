@@ -3,6 +3,9 @@ let bill_value = document.getElementById('input-price');
 let tip = document.getElementById('tip');
 let total = document.getElementById('total')
 let options = document.querySelectorAll('.tip-option');
+
+
+
 for(i = 0; i<options.length;i++){
     options[i].addEventListener("click",function(e){
         let option = document.querySelectorAll(".tip-option");
