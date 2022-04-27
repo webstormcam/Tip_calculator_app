@@ -53,8 +53,8 @@ return human
 
 
 setInterval(function(){ 
-    let tipPerperson=tipAmountHuman(2,10,0.05);
-    tip.innerHTML= Math.floor(tipPerperson*100)/100;
+    let tipPerperson=tipAmountHuman(5,142.55,0.15);
+    tip.innerHTML= tipPerperson.toFixed(2)
     console.log(tip.innerHTML)
 }, 1000);
 
