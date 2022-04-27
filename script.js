@@ -1,6 +1,7 @@
 let bill_value = document.getElementById('input-price');
-let bill='0.00';
+
 let tip = document.getElementById('tip');
+let total = document.getElementById('total')
 let options = document.querySelectorAll('.tip-option');
 for(i = 0; i<options.length;i++){
     options[i].addEventListener("click",function(e){
@@ -14,23 +15,16 @@ for(i = 0; i<options.length;i++){
 }
 
 let num_peeps = document.getElementById('people-counter');
+let num=0;
 
 let error_text = document.getElementById('error-text')
 
 
 
-bill_value.onkeyup = function(){
 
-bill = this.value;
-
-
-
-
-}
 
 num_peeps.onkeyup = function(){
-    let num = Number(num_peeps.value)
-    console.log(typeof num)
+     num = Number(num_peeps.value)
     if(num<=0){
         error_text.style.display ='block';
         error_text.innerHTML =`Can't be a zero`
@@ -40,23 +34,38 @@ num_peeps.onkeyup = function(){
     } else{
         error_text.style.display ='none';
         num_peeps.style.outline ='initial';
+        num = Number(this.value)
+        console.log(`${num} ${typeof num}`)
     }
-    console.log(this.value)
+
+
+    
+   
+
+    // if bill is filled for people
+    // if bill is filled for tip
+   
 }
 
-function tipAmountHuman(humans,cost,percent){
-let gratuity = cost*percent;
-let human = gratuity/humans;
-return human
-}
+
+bill_value.onkeyup = function(){
+    console.log(`This is ${num}`)
+    if(num>0){
+        total.innerHTML=this.value/num;
+        console.log('cutting')
+    } else{
+        total.innerHTML = this.value;
+        console.log('not cuttubg')
+    }
+    
+    }
 
 
 
-setInterval(function(){ 
-    let tipPerperson=tipAmountHuman(5,bill,0.15);
-    tip.innerHTML= tipPerperson.toFixed(2)
-    console.log(tip.innerHTML)
-}, 1000);
+
+
+
+
 
 
 
