@@ -49,6 +49,8 @@ let numchange = bill_value.onkeyup = function(){
   if(tom>0){
         tip_amount_per = (tom*picked)/num;
         tip.innerHTML=tip_amount_per.toFixed(2);
+        console.log(typeof total.value)
+        console.log(typeof tip_amount_per)
 
   }
 
