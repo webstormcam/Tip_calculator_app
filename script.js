@@ -16,8 +16,10 @@ for(i = 0; i<options.length;i++){
     this.classList.add('click');
     console.log('clicked')
     console.log(picked)
-
-    numchange()
+if(num>0){
+    numchange()  
+}
+   
 
 });
 }
@@ -44,12 +46,11 @@ let numchange = bill_value.onkeyup = function(){
     }
 
 
-    if(num>0){
+  if(tom>0){
         tip_amount_per = (tom*picked)/num;
-        console.log(tip_amount_per)
         tip.innerHTML=tip_amount_per.toFixed(2);
-    }
 
+  }
 
     
 
