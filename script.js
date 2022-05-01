@@ -3,7 +3,7 @@ let picked;
 let tip = document.getElementById('tip');
 let total = document.getElementById('total')
 let options = document.querySelectorAll('.tip-option');
-
+let special_tip = document.getElementById('special-tippy');
 
 
 for(i = 0; i<options.length;i++){
@@ -16,6 +16,7 @@ for(i = 0; i<options.length;i++){
     this.classList.add('click');
     console.log('clicked')
     console.log(picked)
+    special_tip.value = null
 if(num>0){
     numchange()  
 }
@@ -60,6 +61,15 @@ let numchange = bill_value.onkeyup = function(){
     
     }
 
+
+    special_tip.onkeyup = function(){
+        picked = Number(this.value)/100
+       console.log(picked)
+       numchange()
+    
+    }
+
+    
 
 
 
