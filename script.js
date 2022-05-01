@@ -46,7 +46,7 @@ let numchange = bill_value.onkeyup = function(){
     }
 
 
-  if(tom>0){
+  if(tom>0&&picked.value!=='NaN'){
         tip_amount_per = (tom*picked)/num;
         tip.innerHTML=tip_amount_per.toFixed(2);
         console.log(typeof total.value)
