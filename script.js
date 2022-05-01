@@ -67,12 +67,12 @@ let numchange = bill_value.onkeyup = function(){
 
 
 num_peeps.onkeyup = function(){
-     num = Number(num_peeps.value)
+    num = Number(num_peeps.value)
     if(num<=0){
         error_text.style.display ='block';
         error_text.innerHTML =`Can't be a zero`
         num_peeps.style.outline ='2px solid #E17457'
-        console.log('Thats a zero')
+        console.log('Thats a zero');
        
     } else{
         error_text.style.display ='none';
